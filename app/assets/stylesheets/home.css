@@ -1,0 +1,25 @@
+body {
+    min-height: 2000px;
+}
+.navbar{
+    margin-bottom: 2px;
+    
+}
+.jumbotron {
+    height: 510px;
+    background: url("topimage.jpg") center 0 no-repeat;
+    background-size: cover;
+}
+h1.jumbotron-h1{
+    text-indent:100%;
+　　white-space:nowrap;
+　　overflow:hidden;
+}
+
+@media (max-width: 767px){
+header.jumbotron {
+    height: 410px;
+    background: url("topimage.jpg") center no-repeat;
+    background-size: cover;
+}
+}

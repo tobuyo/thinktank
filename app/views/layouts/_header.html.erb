@@ -1,12 +1,22 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "ThinkTANK", '#', id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '/' %></li>
-        <li><%= link_to "Help",   '/static_pages/help' %></li>
-        <li><%= link_to "Log in", '#' %></li>
-      </ul>
-    </nav>
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+  <!-- ヘッダー部分 ================ -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><%= link_to "ThinkTANK", '#', class: "navbar-brand" %></a>
+    
+    <!-- この部分がスマートフォンで[三]と表示されるナビゲーションボタンになる -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_target"> <!-- ←これ重要 -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="nav_targets"> <!-- ←これ重要 -->
+     <ul class="nav navbar-nav">
+       <li><%= link_to "Home",   '/' %></li> <!-- class="active" が現在のページでアクティブになります。 -->
+       <li><%= link_to "Help",   '/static_pages/help' %></li>
+       <li><%= link_to "Log in", '#' %></li>
+     </ul>
+    </div>
   </div>
-</header>
+</nav>
