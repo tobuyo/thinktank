@@ -1,2 +1,17 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% content_for :head do %>
+  <title>ThinkTANK</title>
+  <meta name="description" content="<%= @title %>のモノページ。Hanakoの欲しいモノ、持ってるモノを表示しています。">
+<% end %>
+
+<div class="center jumbotron">
+  <%= image_tag("topimage.jpg") %>
+  <h1>ThinkTANKへようこそ！</h1>
+
+  <h2>
+    ThinkTANKは、クラウド上でどこからでも使えるアウトラインプロセッサです。
+    <br />
+    アイデアを出力したり、深めたりできます。
+  </h2>
+
+  <%= link_to "登録する", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
