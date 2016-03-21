@@ -2,7 +2,7 @@
   <div class="container-fluid">
   <!-- ヘッダー部分 ================ -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><%= link_to "ThinkTANK", '#', class: "navbar-brand" %></a>
+      <a class="navbar-brand" href="#"><%= link_to "ThinkTANK", '/', class: "navbar-brand" %></a>
     
     <!-- この部分がスマートフォンで[三]と表示されるナビゲーションボタンになる -->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_target"> <!-- ←これ重要 -->
@@ -15,7 +15,7 @@
      <ul class="nav navbar-nav">
        <li><%= link_to "Home",   '/' %></li> <!-- class="active" が現在のページでアクティブになります。 -->
        <li><%= link_to "Help",   '/static_pages/help' %></li>
-       <li><%= link_to "Log in", '#' %></li>
+       <li><%= link_to "Log in", '/login' %></li>
      </ul>
     </div>
   </div>
